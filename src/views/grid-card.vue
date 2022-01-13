@@ -1,14 +1,28 @@
 <template>
   <div class="grid-card-demo">
-    <div class="grid-area" :class="['count-' + gridCount]">
-      <div v-for="(item) in cardList" :key="item" class="item" :class="['area-' + item]">{{ item }}</div>
+    <div class="grid-area" :class="['count-' + cardList.length]">
+      <div
+        v-for="(item) in cardList"
+        :key="item"
+        class="item"
+        :class="['area-' + item]"
+        @click="add"
+      >{{ item }}</div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const cardList = [1];
-const gridCount = cardList.length;
+import { ref } from 'vue';
+const cardList = ref([1]);
+
+function add() {
+  if (cardList.value.length === 8) {
+    cardList.value = [1];
+    return;
+  }
+  cardList.value.push(cardList.value.length + 1);
+}
 </script>
 
 <style scope lang="scss">
