@@ -21,6 +21,13 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('@/views/grid-card.vue'),
   },
   {
+    path: '/lottery',
+    meta: {
+      title: '抽奖',
+    },
+    component: () => import('@/views/lottery.vue'),
+  },
+  {
     path: '/concise-dom',
     meta: {
       title: '精简 DOM 结构',
