@@ -1,11 +1,11 @@
 <template>
   <div class="concise-dom-page">
-    <div class="goods-area">
+    <!-- <div class="goods-area">
       <div class="goods" :style="goodsBg" />
       <div class="goods-pseudo" />
     </div>
     <div class="close" />
-    <div class="text-bg">超级大礼</div>
+    <div class="text-bg">超级大礼</div> -->
   </div>
 </template>
 

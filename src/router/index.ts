@@ -28,6 +28,13 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('@/views/lottery.vue'),
   },
   {
+    path: '/numbers',
+    meta: {
+      title: '数字键盘',
+    },
+    component: () => import('@/views/numbers.vue'),
+  },
+  {
     path: '/concise-dom',
     meta: {
       title: '精简 DOM 结构',
@@ -40,6 +47,20 @@ export const routes: RouteRecordRaw[] = [
       title: '百变图标',
     },
     component: () => import('@/views/colors-icon.vue'),
+  },
+  {
+    path: '/theme',
+    meta: {
+      title: '主题',
+    },
+    component: () => import('@/views/theme.vue'),
+  },
+  {
+    path: '/favorites',
+    meta: {
+      title: '收藏夹',
+    },
+    component: () => import('@/views/favorites.vue'),
   },
 ];
 
