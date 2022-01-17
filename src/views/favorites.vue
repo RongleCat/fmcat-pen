@@ -5,7 +5,7 @@
       <div class="btn-edit">编辑</div>
     </div>
     <div class="favorites-list">
-      <div class="card-item">
+      <div class="card-item" v-for="i in 10">
         <goods-card />
       </div>
     </div>
@@ -51,5 +51,6 @@ import GoodsCard from '@/components/goods-card.vue';
   padding: 24px;
   border-radius: 16px;
   box-shadow: 0 0 20px 0 rgba(#000, 0.1);
+  margin-bottom: 24px;
 }
 </style>

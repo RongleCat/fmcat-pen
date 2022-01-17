@@ -14,4 +14,49 @@
 </script>
 
 <style scope lang="scss">
+@mixin ellipsis($lineCount: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lineCount;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.goods-card {
+  display: flex;
+
+  .cover {
+    width: 200px;
+    height: 200px;
+    background-color: #f5f5f5;
+    border-radius: 16px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .info-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 16px;
+    font-size: 28px;
+
+    .goods-name {
+      color: #333;
+      font-weight: bold;
+      @include ellipsis(2);
+    }
+
+    .sku-info {
+      color: #999;
+      @include ellipsis(1);
+    }
+  }
+}
 </style>
