@@ -1,7 +1,7 @@
 <template>
   <div class="theme-page" :style="variableStyle">
-    <div class="icon-container">
-      <div class="icon" />
+    <div class="numbers-container">
+      <div class="numbers" />
     </div>
 
     <div class="btn-list">
@@ -56,23 +56,24 @@ const variableStyle = computed(() => {
   flex-direction: column;
 }
 
-.icon-container {
-  width: 100px;
-  height: 100px;
+.numbers-container {
+  width: 280px;
+  height: 33px;
   position: relative;
   overflow: hidden;
   margin-bottom: 50px;
 }
 
-.icon {
+.numbers {
   position: absolute;
-  top: -120px;
+  top: -33px;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("http://s1.billionbottle.com/w-admin-clover-node/img/new-logo.24989203.png");
+  background-image: url('@/assets/images/numbers.png');
   background-size: contain;
-  filter: drop-shadow(0 120px 0 theme-rgba());
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 33px 0 theme-rgba());
 }
 
 .btn-list {

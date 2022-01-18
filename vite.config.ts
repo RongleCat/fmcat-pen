@@ -3,7 +3,15 @@ import vue from '@vitejs/plugin-vue';
 import { resolve } from 'path';
 import px2vw from 'postcss-px-to-viewport';
 
-const convertPageList = ['lottery', 'numbers', 'favorites', 'goods-card'];
+const convertPageList = [
+  'lottery',
+  'numbers',
+  'favorites',
+  'goods-card',
+  'timeline',
+  'dynamic-item',
+  'heytea',
+];
 const px2vwReg = new RegExp(`^((?!${convertPageList.join('|')}).)*$`);
 
 // https://vitejs.dev/config/

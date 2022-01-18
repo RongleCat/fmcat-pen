@@ -62,6 +62,20 @@ export const routes: RouteRecordRaw[] = [
     },
     component: () => import('@/views/favorites.vue'),
   },
+  {
+    path: '/timeline',
+    meta: {
+      title: '时间线',
+    },
+    component: () => import('@/views/timeline.vue'),
+  },
+  {
+    path: '/heytea',
+    meta: {
+      title: '喜茶',
+    },
+    component: () => import('@/views/heytea.vue'),
+  },
 ];
 
 const router = createRouter({
