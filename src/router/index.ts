@@ -76,6 +76,13 @@ export const routes: RouteRecordRaw[] = [
     },
     component: () => import('@/views/heytea.vue'),
   },
+  {
+    path: '/fixed',
+    meta: {
+      title: '打破窗口定位',
+    },
+    component: () => import('@/views/fixed.vue'),
+  },
 ];
 
 const router = createRouter({

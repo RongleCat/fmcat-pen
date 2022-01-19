@@ -183,6 +183,7 @@ function mainAreaClick() {
         height: 28px;
         background-image: url("@/assets/images/heytea/vip.png");
         background-size: contain;
+        background-repeat: no-repeat;
       }
     }
 
